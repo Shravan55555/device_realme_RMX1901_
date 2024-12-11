@@ -25,12 +25,12 @@ fi
 
 # Clone Kernel Sources
     git clone --depth=1 -b testtt https://github.com/shravansayz/kernel_realme_sdm710.git kernel/realme/sdm710
-    cd kernel/realme/RMX1901
+    cd kernel/realme/sdm710
     curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.5
     cd ../../..
 
 # Cloning Clang Source
-git clone --depth=1 -b master https://github.com/kdrag0n/proton-clang.git prebuilts/clang/host/linux-x86/clang-proton
+    git clone --depth=1 -b master https://github.com/kdrag0n/proton-clang.git prebuilts/clang/host/linux-x86/clang-proton
 
 # End
 echo -e "${YELLOW}All patches have been successfully applied; your device sources are now ready!${END}"
